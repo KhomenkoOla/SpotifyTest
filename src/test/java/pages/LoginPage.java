@@ -79,4 +79,7 @@ public class LoginPage extends BasePage {
     public void waitVisibilityErrorSpan(long defaultTimeout) {
         this.waitVisibilityOfElement(defaultTimeout, errorMessageSpan);
     }
+    public void waitVisibilityLoginInput(long defaultTimeout) {
+        this.waitVisibilityOfElement(defaultTimeout, loginInput);
+    }
 }

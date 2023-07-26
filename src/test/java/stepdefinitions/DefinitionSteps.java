@@ -54,7 +54,7 @@ public class DefinitionSteps {
     @And("User check whether the home page has open {string}")
     public void checkThatUrlIsLoginPage(final String expectedUrl) {
         loginPage = pageFactoryManager.getLoginPage();
-        loginPage.waitForPageLoadComplete(DEFAULT_TIMEOUT);
+        loginPage.waitVisibilityLoginInput(DEFAULT_TIMEOUT);
         assertTrue(loginPage.checkThatUrlIsLoginPage(expectedUrl));
     }
 
